@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kredite können wir!</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+<body class="d-flex flex-column h-100">
+
+<header>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Registration</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="savings.html">Sparen</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"  href="loans.html">Kredit</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+      <div class="row g-5">
+
+        <div class="col-md-7 col-lg-8">
+          <br/><br/>
+          <h4 class="mb-3">Kredite können wir!</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="borrow" class="form-label">Wie hoch soll der Kredit sein?</label>
+                <input type="text" class="form-control" id="borrow" placeholder="" value="" required="">
+              </div>
+
+              <div class="col-sm-6">
+                    <label for="period" class="form-label">Für wie lange?</label>
+                    <select class="form-select" id="period" required="">
+                        <option>1 Monat</option>
+                        <option>2 Monate</option>
+                        <option>1 Jahr</option>
+                        <option>10 Jahre</option>
+                    </select>
+                </div>
+            </div>
+
+              <br/>
+              <div role="alert" class="sm-6 alert alert-info" id="result" style="display:none">
+
+              </div>
+
+              <div class="col-sm-6">
+                  <br/>
+                  <label class="form-label">Gehaltsabrechnung hochladen</label>
+                  <input class="form-control" type="file">
+              </div>
+          </form>
+
+        </div>
+
+          <div class="col-md-7 col-lg-8">
+              <h4 class="mb-3">Allgemeine Geschäftsbedingungen</h4>
+              <div class="col-sm-12">
+                  <br/>
+                  <p>Wir sind ehrlich, versprochen.</p>
+                  <button id="apply" class="btn btn-primary btn-lg" type="submit">Senden</button>
+                  <br/><br/>
+                  <div role="alert" class="col-md-4  alert-info" id="message">
+
+                  </div>
+
+              </div>
+          </div>
+      </div>
+
+
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">© 2024 United Playwright Bank</span>
+        <br/>
+        <span class="text-muted" id="location"></span>
+    </div>
+</footer>
+
+<script src="js/loans.js"></script>
+<script src="js/footer.js"></script>
+
+</body>
+</html>

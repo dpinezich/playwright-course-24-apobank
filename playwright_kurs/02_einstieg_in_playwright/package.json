@@ -1,0 +1,22 @@
+{
+  "name": "02_einstieg_in_playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "testserver": "node test-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.5.4",
+    "@types/filesystem": "^0.0.36"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

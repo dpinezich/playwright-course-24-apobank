@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="data:,">
+    <title>Bewerben Sie sich hier für ein Konto</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html">Registration</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="savings.html">Sparen</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="loans.html">Kredit</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Begin page content -->
+<main class="flex-shrink-0">
+    <div class="container">
+
+      <div class="row g-5">
+        <div class="col-md-7 col-lg-8">
+          <br/><br/>
+          <h4 class="mb-3">Bewerben Sie sich hier für ein Konto</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Vorname</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+              
+                <div class="invalid-feedback">
+                  Ein gültiger Vorname ist erforderlich
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Nachname</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+
+                <div class="invalid-feedback">
+                  Ein gültiger Nachname ist erforderlich
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="plz" class="form-label">Postleitzahl</label>
+                <input type="text" class="form-control" id="plz" placeholder="8000" value="" required="">
+              
+                <div class="invalid-feedback">
+                  Ein gültige Postleitzahl ist erforderlich
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="street" class="form-label">Strasse</label>
+                <input type="text" class="form-control" id="street" placeholder="Musterstrasse" value="" required="">
+              
+                <div class="invalid-feedback">
+                  Ein gültige Strasse ist erforderlich
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="email" class="form-label">E-Mail Adresse</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com" required="">
+                <div class="invalid-feedback">
+                  Eine gültige E-Mail Adresse ist erforderlich
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="dob" class="form-label">Geburtsdatum (optional)</label>
+                <input id="dob" class="form-control" type="date">
+              </div>
+
+
+            </div>
+
+            <hr class="my-4">
+
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="success-story">
+              <label class="form-check-label" for="success-story">Ich möchte meine Erfolge mit Playwright teilen:</label>
+
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control" id="textarea" rows="3" disabled></textarea>
+            </div>
+
+
+            <hr class="my-4">
+
+            <button id="clear" class="btn btn-secondary btn-lg" type="submit">Zurücksetzen</button>
+            <button id="register" class="btn btn-primary btn-lg" type="submit">Registrieren</button>
+            <button id="save" class="btn btn-primary btn-lg" type="submit">Speichern</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</main>
+
+<footer class="footer mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-muted">© 2024 United Playwright Bank</span>
+        <br/>
+        <span class="text-muted" data-testid="location" id="location"></span>
+    </div>
+</footer>
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/footer.js"></script>
+
+
+</body>
+</html>
